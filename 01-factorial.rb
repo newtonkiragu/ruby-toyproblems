@@ -5,11 +5,19 @@
 #
 # Difficulty: easy.
 
+# def factorial(n)
+#   fac = n
+#   return 1 if n == 0
+#   n.times {|x|  fac *= (x) if x != 0}
+#   fac
+# end
+
 def factorial(n)
-	fac = n
-	return 1 if n == 0
-	n.times {|x|  fac *= (x) if x != 0}
-	fac
+  if n == 0
+    return 1
+  else
+    return n * factorial(n - 1)
+  end
 end
 
 puts("factorial(0) == 1: #{factorial(0) == 1}")
