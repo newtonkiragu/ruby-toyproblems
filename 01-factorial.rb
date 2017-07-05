@@ -13,11 +13,12 @@
 # end
 
 def factorial(n)
-  if n == 0
-    return 1
-  else
-    return n * factorial(n - 1)
-  end
+  # if n == 0
+  #   return 1
+  # else
+  #   return n * factorial(n - 1)
+  # end
+  n == 0? n: n * factorial(n - 1)
 end
 
 puts("factorial(0) == 1: #{factorial(0) == 1}")
