@@ -6,6 +6,7 @@
 # Difficulty: easy.
 
 def palindrome?(string)
+	string.each_char.any? { |word| word == word.reverse }
 end
 
 puts("palindrome?(\"abc\") == false: #{palindrome?("abc") == false}")
