@@ -1,7 +1,17 @@
+# def letter_count(str)
+# 	frequencies = {}
+# 	str.each_char do |x|
+# 		frequencies[x] = str.count(x) unless frequencies.has_key?(x) || x == " "
+# 	end
+# 	frequencies
+# end
+
 def letter_count(str)
-	frequencies = {}
+	freq = {}
 	str.each_char do |x|
-		frequencies[x] = str.count(x) unless frequencies.has_key?(x) || x == " "
+		freq[x] = str.count(x)
 	end
-	frequencies
+	freq
 end
+
+puts letter_count("School")
