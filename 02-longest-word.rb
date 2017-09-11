@@ -7,11 +7,7 @@
 # Difficulty: easy.
 
 def longest_word(sentence)
-	#prev = {}
-	#sentence.split(' ').each {|x| prev[x] = x.split('').length}
-	#prev.sort_by{|v, k| k}.to_a.pop.shift
-	sentence.split(' ').max_by{|x| x.length}
-
+	sentence.split(' ').max{|x| x.length}
 end
 
 puts("longest_word(\"short longest\") == \"longest\": #{longest_word("short longest") == "longest"}")
