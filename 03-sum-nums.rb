@@ -4,6 +4,11 @@
 # Difficulty: easy.
 
 def sum_nums(num)
+	sum = 0
+	for x in 0..num
+		sum += x
+	end
+	sum
 end
 
 puts("sum_nums(1) == 1: #{sum_nums(1) == 1}")
