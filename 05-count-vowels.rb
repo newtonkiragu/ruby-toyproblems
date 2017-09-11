@@ -5,6 +5,7 @@
 # Difficulty: easy.
 
 def count_vowels(string)
+	string.scan(/['aeiou']/).count
 end
 
 puts("count_vowels(\"abcd\") == 1: #{count_vowels("abcd") == 1}")
