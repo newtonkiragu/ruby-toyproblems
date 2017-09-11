@@ -5,6 +5,7 @@
 # Difficulty: medium.
 
 def most_common_letter(string)
+	string.
 end
 
 puts("most_common_letter(\"abca\") == [\"a\", 2]: #{most_common_letter("abca") == ["a", 2]}")
