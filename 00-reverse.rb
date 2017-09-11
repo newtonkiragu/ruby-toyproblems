@@ -4,6 +4,7 @@
 # Difficulty: easy.
 
 def reverse(string)
+	string.reverse
 end
 
 puts("reverse(\"abc\") == \"cba\": #{reverse("abc") == "cba"}")
